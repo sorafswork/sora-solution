@@ -22,7 +22,7 @@ export function CustomCursor() {
       target.y = e.clientY;
       const el = (e.target as HTMLElement)?.closest?.("[data-cursor]") as HTMLElement | null;
       if (el) {
-        const value = el.dataset.cursor!;
+        const value = el.dataset["cursor"]!;
         if (value === "link") {
           setMode("link");
           setLabel(null);
