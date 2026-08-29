@@ -9,19 +9,16 @@ export function ProcessTimeline() {
   const height = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
   return (
-    <section id="process" className="relative py-20 sm:py-28">
+    <section id="process" className="relative py-14 sm:py-20">
       <div className="mx-auto max-w-[1400px] px-5 sm:px-8">
         <SectionLabel>Work process</SectionLabel>
-        <h2 className="display-lg mt-7 max-w-3xl">
+        <h2 className="display-lg mt-6 max-w-3xl">
           <SplitLines lines={["FROM IDEA", "TO LAUNCH."]} />
         </h2>
 
-        <div ref={ref} className="relative mt-14 pl-10 sm:pl-20">
-          <div className="absolute left-2 top-0 h-full w-px bg-border sm:left-6" aria-hidden>
-            <motion.div style={{ height }} className="w-px bg-accent" />
-          </div>
-
-          <ol className="space-y-14">
+        <div ref={ref} className="relative mt-10 pl-10 sm:pl-20">
+...
+          <ol className="space-y-10">
             {PROCESS.map((p, i) => (
               <motion.li
                 key={p.n}

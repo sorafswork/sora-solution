@@ -11,9 +11,9 @@ export function StorySection() {
   const rotate = useTransform(scrollYProgress, [0, 1], [0, 220]);
 
   return (
-    <section ref={ref} className="relative overflow-hidden py-32 sm:py-44">
+    <section ref={ref} className="relative overflow-hidden py-16 sm:py-24">
       <div className="mx-auto max-w-[1400px] px-5 sm:px-8">
-        <div className="grid gap-20 lg:grid-cols-2 lg:items-center">
+        <div className="grid gap-14 lg:grid-cols-2 lg:items-center">
           <div>
             <h2 className="display-lg">
               <SplitLines lines={["EVERY GREAT", "BUSINESS", "STARTS SMALL."]} />
@@ -66,7 +66,7 @@ export function StorySection() {
         </div>
 
         <Reveal delay={0.1}>
-          <p className="display-lg mt-20 max-w-4xl">
+          <p className="display-lg mt-14 max-w-4xl">
             WE TURN IDEAS INTO <span className="accent-text">DIGITAL EXPERIENCES.</span>
           </p>
         </Reveal>

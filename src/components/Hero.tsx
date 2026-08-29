@@ -56,7 +56,7 @@ export function Hero() {
         style={{ background: "color-mix(in oklab, var(--accent) 22%, transparent)" }}
       />
 
-      <div className="relative mx-auto grid w-full max-w-[1400px] gap-14 px-5 pb-24 sm:px-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+      <div className="relative mx-auto grid w-full max-w-[1400px] gap-12 px-5 pb-16 sm:px-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
         <div>
           <motion.p
             className="eyebrow"

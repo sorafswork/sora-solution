@@ -4,14 +4,14 @@ import { SectionLabel, SplitLines } from "./Reveal";
 
 export function WhySora() {
   return (
-    <section className="relative py-20 sm:py-28">
+    <section className="relative py-14 sm:py-20">
       <div className="mx-auto max-w-[1400px] px-5 sm:px-8">
         <SectionLabel>Why SoRa</SectionLabel>
-        <h2 className="display-lg mt-7 max-w-3xl">
+        <h2 className="display-lg mt-6 max-w-3xl">
           <SplitLines lines={["BUILT ON QUALITY.", "BACKED BY CARE."]} />
         </h2>
 
-        <div className="mt-16 flex flex-wrap gap-3" style={{ perspective: 900 }}>
+        <div className="mt-10 flex flex-wrap gap-3" style={{ perspective: 900 }}>
           {BADGES.map((b, i) => (
             <motion.span
               key={b}
@@ -28,7 +28,7 @@ export function WhySora() {
           ))}
         </div>
 
-        <div className="mt-14 grid gap-px overflow-hidden rounded-2xl border border-border/70 bg-border/60 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 grid gap-px overflow-hidden rounded-2xl border border-border/70 bg-border/60 sm:grid-cols-2 lg:grid-cols-4">
           {EXTRA_SERVICES.map((s, i) => (
             <motion.div
               key={s.title}

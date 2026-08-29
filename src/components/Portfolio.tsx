@@ -93,10 +93,10 @@ export function Portfolio() {
   const list = active === "ALL" ? PROJECTS : PROJECTS.filter((p) => p.category === active);
 
   return (
-    <section id="works" className="relative py-20 sm:py-28">
+    <section id="works" className="relative py-14 sm:py-20">
       <div className="mx-auto max-w-[1400px] px-5 sm:px-8">
         <SectionLabel>Our work</SectionLabel>
-        <div className="mt-8 flex flex-wrap items-end justify-between gap-8">
+        <div className="mt-6 flex flex-wrap items-end justify-between gap-6">
           <h2 className="display-lg">
             <SplitLines lines={["OUR WORK"]} />
           </h2>
@@ -105,7 +105,7 @@ export function Portfolio() {
           </p>
         </div>
 
-        <div className="mt-12 flex flex-wrap gap-2" role="tablist" aria-label="Project categories">
+        <div className="mt-9 flex flex-wrap gap-2" role="tablist" aria-label="Project categories">
           {PROJECT_CATEGORIES.map((c) => (
             <button
               key={c}
@@ -124,7 +124,7 @@ export function Portfolio() {
           ))}
         </div>
 
-        <div className="mt-16 space-y-24">
+        <div className="mt-12 space-y-16">
           <AnimatePresence mode="popLayout">
             {list.map((p, i) => (
               <ProjectShowcase key={p.n} project={p} index={i} />

@@ -44,7 +44,7 @@ export function ContactForm() {
             timeline and price.
           </p>
 
-          <dl className="mt-12 space-y-6">
+          <dl className="mt-10 space-y-5">
             {[
               { label: "Email", value: CONTACT.email, href: `mailto:${CONTACT.email}` },
               {

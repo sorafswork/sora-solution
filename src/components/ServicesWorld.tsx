@@ -5,14 +5,14 @@ import { Tilt3D } from "./Tilt3D";
 
 export function ServicesWorld() {
   return (
-    <section id="services" className="relative overflow-hidden py-20 sm:py-28">
+    <section id="services" className="relative overflow-hidden py-14 sm:py-20">
       <div className="mx-auto max-w-[1400px] px-5 sm:px-8">
         <SectionLabel>The digital world</SectionLabel>
-        <h2 className="display-lg mt-7 max-w-4xl">
+        <h2 className="display-lg mt-6 max-w-4xl">
           <SplitLines lines={["EVERYTHING YOUR", "BRAND NEEDS."]} />
         </h2>
 
-        <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {WORLD_SERVICES.map((s, i) => (
             <motion.article
               key={s.n}
