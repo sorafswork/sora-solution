@@ -14,11 +14,11 @@ export function Testimonials() {
   const t = TESTIMONIALS[i]!;
 
   return (
-    <section id="testimonials" className="relative py-20 sm:py-28">
+    <section id="testimonials" className="relative py-14 sm:py-20">
       <div className="mx-auto max-w-[1100px] px-5 sm:px-8">
         <SectionLabel>Client voices</SectionLabel>
 
-        <div className="relative mt-14 min-h-[300px] sm:min-h-[260px]">
+        <div className="relative mt-10 min-h-[300px] sm:min-h-[260px]">
           <AnimatePresence mode="wait">
             <motion.blockquote
               key={i}

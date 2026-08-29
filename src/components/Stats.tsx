@@ -32,10 +32,10 @@ function Counter({ value, suffix }: { value: number; suffix: string }) {
 
 export function Stats() {
   return (
-    <section className="relative border-y border-border/60 py-24 sm:py-32">
+    <section className="relative border-y border-border/60 py-16 sm:py-20">
       <div className="mx-auto max-w-[1400px] px-5 sm:px-8">
         <SectionLabel>By the numbers</SectionLabel>
-        <div className="mt-14 grid gap-10 sm:grid-cols-2 lg:grid-cols-5">
+        <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
           {STATS.map((s, i) => (
             <motion.div
               key={s.label}
