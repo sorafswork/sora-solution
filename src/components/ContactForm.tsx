@@ -28,12 +28,12 @@ export function ContactForm() {
   }
 
   return (
-    <section id="contact" className="relative overflow-hidden py-20 sm:py-28">
+    <section id="contact" className="relative overflow-hidden py-14 sm:py-20">
       <div
         className="pointer-events-none absolute left-1/2 top-1/3 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-accent/10 blur-[140px]"
         aria-hidden
       />
-      <div className="relative mx-auto grid max-w-[1400px] gap-16 px-5 sm:px-8 lg:grid-cols-2">
+      <div className="relative mx-auto grid max-w-[1400px] gap-12 px-5 sm:px-8 lg:grid-cols-2">
         <div>
           <SectionLabel>Contact</SectionLabel>
           <h2 className="mt-6 font-display text-5xl font-extrabold leading-[0.95] tracking-tighter sm:text-7xl">
