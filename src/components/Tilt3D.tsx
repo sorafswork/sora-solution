@@ -1,4 +1,11 @@
-import { motion, useMotionValue, useSpring, useTransform, useReducedMotion } from "motion/react";
+import {
+  motion,
+  useMotionTemplate,
+  useMotionValue,
+  useReducedMotion,
+  useSpring,
+  useTransform,
+} from "motion/react";
 import type { PointerEvent, ReactNode } from "react";
 
 export function Tilt3D({
@@ -24,6 +31,7 @@ export function Tilt3D({
   const rotateX = useTransform(sy, [0, 1], [max, -max]);
   const glareX = useTransform(sx, (v) => `${v * 100}%`);
   const glareY = useTransform(sy, (v) => `${v * 100}%`);
+  const glareBg = useMotionTemplate`radial-gradient(340px circle at ${glareX} ${glareY}, color-mix(in oklab, var(--accent) 18%, transparent), transparent 70%)`;
 
   if (reduce) return <div className={className}>{children}</div>;
 
@@ -52,11 +60,7 @@ export function Tilt3D({
         <motion.span
           aria-hidden
           className="pointer-events-none absolute inset-0 rounded-[inherit] opacity-0 transition-opacity duration-500 [.group:hover_&]:opacity-100"
-          style={{
-            background: `radial-gradient(320px circle at ${glareX.get()}% ${glareY.get()}%, color-mix(in oklab, var(--accent) 20%, transparent), transparent 70%)`,
-            backgroundPositionX: glareX,
-            backgroundPositionY: glareY,
-          }}
+          style={{ background: glareBg }}
         />
       )}
     </motion.div>
