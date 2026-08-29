@@ -4,7 +4,7 @@ import { SectionLabel, SplitLines } from "./Reveal";
 
 export function WhySora() {
   return (
-    <section className="relative py-28 sm:py-40">
+    <section className="relative py-20 sm:py-28">
       <div className="mx-auto max-w-[1400px] px-5 sm:px-8">
         <SectionLabel>Why SoRa</SectionLabel>
         <h2 className="display-lg mt-7 max-w-3xl">
@@ -28,7 +28,7 @@ export function WhySora() {
           ))}
         </div>
 
-        <div className="mt-20 grid gap-px overflow-hidden rounded-2xl border border-border/70 bg-border/60 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-14 grid gap-px overflow-hidden rounded-2xl border border-border/70 bg-border/60 sm:grid-cols-2 lg:grid-cols-4">
           {EXTRA_SERVICES.map((s, i) => (
             <motion.div
               key={s.title}

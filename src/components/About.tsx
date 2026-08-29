@@ -22,7 +22,7 @@ const PILLARS = [
 
 export function About() {
   return (
-    <section id="about" className="relative py-28 sm:py-40">
+    <section id="about" className="relative py-20 sm:py-28">
       <div className="mx-auto max-w-[1400px] px-5 sm:px-8">
         <SectionLabel>Who we are</SectionLabel>
         <div className="mt-8 grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
@@ -37,7 +37,7 @@ export function About() {
           </Reveal>
         </div>
 
-        <div className="mt-20 grid gap-6 md:grid-cols-3" style={{ perspective: 1200 }}>
+        <div className="mt-14 grid gap-6 md:grid-cols-3" style={{ perspective: 1200 }}>
           {PILLARS.map((p, i) => (
             <motion.div
               key={p.title}

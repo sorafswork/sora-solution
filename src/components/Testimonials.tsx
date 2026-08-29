@@ -14,7 +14,7 @@ export function Testimonials() {
   const t = TESTIMONIALS[i]!;
 
   return (
-    <section id="testimonials" className="relative py-28 sm:py-40">
+    <section id="testimonials" className="relative py-20 sm:py-28">
       <div className="mx-auto max-w-[1100px] px-5 sm:px-8">
         <SectionLabel>Client voices</SectionLabel>
 

@@ -66,7 +66,7 @@ export function StorySection() {
         </div>
 
         <Reveal delay={0.1}>
-          <p className="display-lg mt-28 max-w-4xl">
+          <p className="display-lg mt-20 max-w-4xl">
             WE TURN IDEAS INTO <span className="accent-text">DIGITAL EXPERIENCES.</span>
           </p>
         </Reveal>

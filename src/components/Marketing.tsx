@@ -20,7 +20,7 @@ export function Marketing() {
   const x = useTransform(scrollYProgress, [0, 1], ["8%", "-8%"]);
 
   return (
-    <section ref={ref} className="grain relative overflow-hidden py-28 sm:py-40">
+    <section ref={ref} className="grain relative overflow-hidden py-20 sm:py-28">
       <div className="mx-auto max-w-[1400px] px-5 sm:px-8">
         <SectionLabel>Digital marketing</SectionLabel>
         <Reveal delay={0.1}>
@@ -46,7 +46,7 @@ export function Marketing() {
           ))}
         </motion.div>
 
-        <div className="mt-24 grid gap-4 sm:grid-cols-3 lg:grid-cols-6">
+        <div className="mt-16 grid gap-4 sm:grid-cols-3 lg:grid-cols-6">
           {CHANNELS.map((c, i) => (
             <motion.div
               key={c.label}
@@ -76,7 +76,7 @@ export function Marketing() {
         </div>
 
         <Reveal delay={0.15}>
-          <p className="display-lg mt-28 max-w-5xl">
+          <p className="display-lg mt-20 max-w-5xl">
             WE DON'T JUST BUILD YOUR WEBSITE.{" "}
             <span className="accent-text">WE HELP BUILD YOUR BUSINESS.</span>
           </p>
