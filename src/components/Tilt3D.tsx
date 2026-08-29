@@ -53,13 +53,13 @@ export function Tilt3D({
       whileHover={{ y: lift }}
       style={{ rotateX, rotateY, transformPerspective: 1100, transformStyle: "preserve-3d" }}
       transition={{ type: "spring", stiffness: 200, damping: 22 }}
-      className={`relative ${className ?? ""}`}
+      className={`group relative ${className ?? ""}`}
     >
       {children}
       {glare && (
         <motion.span
           aria-hidden
-          className="pointer-events-none absolute inset-0 rounded-[inherit] opacity-0 transition-opacity duration-500 [.group:hover_&]:opacity-100"
+          className="pointer-events-none absolute inset-0 rounded-[inherit] opacity-0 transition-opacity duration-500 group-hover:opacity-100"
           style={{ background: glareBg }}
         />
       )}

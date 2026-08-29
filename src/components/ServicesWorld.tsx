@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import { WORLD_SERVICES } from "@/lib/site-data";
 import { Reveal, SectionLabel, SplitLines } from "./Reveal";
+import { Tilt3D } from "./Tilt3D";
 
 export function ServicesWorld() {
   return (
@@ -20,12 +21,9 @@ export function ServicesWorld() {
               whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.85, delay: (i % 3) * 0.1, ease: [0.22, 1, 0.36, 1] }}
-              whileHover={{ y: -10, rotateY: 4, scale: 1.02 }}
-              style={{ transformPerspective: 1000 }}
-              className={`group relative isolate overflow-hidden rounded-2xl border border-border/70 bg-card/50 ${
-                i === 0 || i === 5 ? "lg:row-span-1" : ""
-              }`}
+              className="h-full"
             >
+              <Tilt3D max={9} className="group h-full isolate overflow-hidden rounded-2xl border border-border/70 bg-card/50">
               <div className="relative h-52 overflow-hidden">
                 <img
                   src={s.image}
@@ -49,6 +47,7 @@ export function ServicesWorld() {
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{s.copy}</p>
                 <span className="mt-6 block h-px w-0 bg-accent transition-all duration-500 group-hover:w-full" />
               </div>
+              </Tilt3D>
             </motion.article>
           ))}
         </div>

@@ -3,6 +3,7 @@ import { useState } from "react";
 import { ArrowUpRight } from "lucide-react";
 import { PROJECTS, PROJECT_CATEGORIES, type Project } from "@/lib/site-data";
 import { SectionLabel, SplitLines } from "./Reveal";
+import { Tilt3D } from "./Tilt3D";
 
 function ProjectShowcase({ project, index }: { project: Project; index: number }) {
   const flip = index % 2 === 1;
@@ -25,12 +26,9 @@ function ProjectShowcase({ project, index }: { project: Project; index: number }
         style={{ perspective: 1500 }}
         whileHover={{ scale: 1.01 }}
       >
-        <motion.div
-          initial={{ rotateY: flip ? 10 : -10, rotateX: 6 }}
-          whileInView={{ rotateY: flip ? 4 : -4, rotateX: 2 }}
-          whileHover={{ rotateY: 0, rotateX: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
+        <Tilt3D
+          max={7}
+          lift={-8}
           className="overflow-hidden rounded-2xl border border-border/70 bg-card accent-glow"
         >
           <div className="flex items-center gap-1.5 border-b border-border/60 bg-card px-4 py-3">
@@ -51,7 +49,7 @@ function ProjectShowcase({ project, index }: { project: Project; index: number }
             />
             <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-transparent opacity-70 transition-opacity duration-700 group-hover:opacity-30" />
           </div>
-        </motion.div>
+        </Tilt3D>
       </motion.a>
 
       <div className="[direction:ltr]">
