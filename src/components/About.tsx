@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import { Compass, Eye, Gem } from "lucide-react";
 import { Reveal, SectionLabel, SplitLines } from "./Reveal";
+import { Tilt3D } from "./Tilt3D";
 
 const PILLARS = [
   {
@@ -45,9 +46,8 @@ export function About() {
               whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.9, delay: i * 0.12, ease: [0.22, 1, 0.36, 1] }}
-              whileHover={{ y: -12, rotateY: i === 1 ? 0 : i === 0 ? 5 : -5 }}
-              className="glass group relative overflow-hidden rounded-3xl p-9"
             >
+              <Tilt3D max={8} className="glass overflow-hidden rounded-3xl p-9">
               <div
                 aria-hidden
                 className="pointer-events-none absolute -right-16 -top-16 h-44 w-44 rounded-full opacity-40 blur-3xl transition-opacity duration-700 group-hover:opacity-80"
@@ -56,6 +56,7 @@ export function About() {
               <p.icon className="h-7 w-7 text-accent" aria-hidden />
               <h3 className="mt-8 font-display text-3xl font-extrabold tracking-tight">{p.title}</h3>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{p.copy}</p>
+              </Tilt3D>
             </motion.div>
           ))}
         </div>

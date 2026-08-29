@@ -2,6 +2,7 @@ import { motion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
 import { BarChart3, Megaphone, MousePointerClick, Search, Share2, TrendingUp } from "lucide-react";
 import { Reveal, SectionLabel } from "./Reveal";
+import { Tilt3D } from "./Tilt3D";
 
 const WORDS = ["ATTENTION.", "TRUST.", "CONVERSIONS.", "GROWTH."];
 
@@ -54,9 +55,8 @@ export function Marketing() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7, delay: i * 0.07 }}
-              whileHover={{ y: -8 }}
-              className="glass flex flex-col gap-4 rounded-2xl p-5"
             >
+              <Tilt3D max={10} className="glass flex h-full flex-col gap-4 rounded-2xl p-5">
               <c.icon className="h-5 w-5 text-accent" aria-hidden />
               <span className="text-sm font-medium">{c.label}</span>
               <div className="flex h-10 items-end gap-1">
@@ -71,6 +71,7 @@ export function Marketing() {
                   />
                 ))}
               </div>
+              </Tilt3D>
             </motion.div>
           ))}
         </div>
