@@ -42,7 +42,7 @@ export function TechSphere() {
   const radius = 210;
 
   return (
-    <section id="tech" className="relative overflow-hidden py-28 sm:py-40">
+    <section id="tech" className="relative overflow-hidden py-20 sm:py-28">
       <div className="mx-auto grid max-w-[1400px] items-center gap-16 px-5 sm:px-8 lg:grid-cols-2">
         <div>
           <SectionLabel>Tech universe</SectionLabel>

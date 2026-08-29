@@ -2,6 +2,7 @@ import { motion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
 import { BarChart3, Megaphone, MousePointerClick, Search, Share2, TrendingUp } from "lucide-react";
 import { Reveal, SectionLabel } from "./Reveal";
+import { Tilt3D } from "./Tilt3D";
 
 const WORDS = ["ATTENTION.", "TRUST.", "CONVERSIONS.", "GROWTH."];
 
@@ -20,7 +21,7 @@ export function Marketing() {
   const x = useTransform(scrollYProgress, [0, 1], ["8%", "-8%"]);
 
   return (
-    <section ref={ref} className="grain relative overflow-hidden py-28 sm:py-40">
+    <section ref={ref} className="grain relative overflow-hidden py-20 sm:py-28">
       <div className="mx-auto max-w-[1400px] px-5 sm:px-8">
         <SectionLabel>Digital marketing</SectionLabel>
         <Reveal delay={0.1}>
@@ -46,7 +47,7 @@ export function Marketing() {
           ))}
         </motion.div>
 
-        <div className="mt-24 grid gap-4 sm:grid-cols-3 lg:grid-cols-6">
+        <div className="mt-16 grid gap-4 sm:grid-cols-3 lg:grid-cols-6">
           {CHANNELS.map((c, i) => (
             <motion.div
               key={c.label}
@@ -54,9 +55,8 @@ export function Marketing() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7, delay: i * 0.07 }}
-              whileHover={{ y: -8 }}
-              className="glass flex flex-col gap-4 rounded-2xl p-5"
             >
+              <Tilt3D max={10} className="glass flex h-full flex-col gap-4 rounded-2xl p-5">
               <c.icon className="h-5 w-5 text-accent" aria-hidden />
               <span className="text-sm font-medium">{c.label}</span>
               <div className="flex h-10 items-end gap-1">
@@ -71,12 +71,13 @@ export function Marketing() {
                   />
                 ))}
               </div>
+              </Tilt3D>
             </motion.div>
           ))}
         </div>
 
         <Reveal delay={0.15}>
-          <p className="display-lg mt-28 max-w-5xl">
+          <p className="display-lg mt-20 max-w-5xl">
             WE DON'T JUST BUILD YOUR WEBSITE.{" "}
             <span className="accent-text">WE HELP BUILD YOUR BUSINESS.</span>
           </p>

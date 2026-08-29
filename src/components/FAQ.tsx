@@ -7,7 +7,7 @@ export function FAQ() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="relative py-28 sm:py-40">
+    <section id="faq" className="relative py-20 sm:py-28">
       <div className="mx-auto grid max-w-[1400px] gap-14 px-5 sm:px-8 lg:grid-cols-[0.8fr_1.2fr]">
         <div>
           <SectionLabel>FAQ</SectionLabel>
