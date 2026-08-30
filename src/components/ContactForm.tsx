@@ -82,6 +82,10 @@ export function ContactForm() {
               </Reveal>
             ))}
           </dl>
+
+          <div className="mt-12 hidden lg:block" aria-hidden>
+            <Layers3D />
+          </div>
         </div>
 
         <motion.form
