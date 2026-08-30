@@ -2,6 +2,8 @@ import { motion } from "motion/react";
 import { Compass, Eye, Gem } from "lucide-react";
 import { Reveal, SectionLabel, SplitLines } from "./Reveal";
 import { Tilt3D } from "./Tilt3D";
+import { Cube3D } from "./Illustration3D";
+
 
 const PILLARS = [
   {
