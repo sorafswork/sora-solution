@@ -2,6 +2,7 @@ import { motion } from "motion/react";
 import { useState } from "react";
 import { CONTACT, SERVICE_OPTIONS } from "@/lib/site-data";
 import { Reveal, SectionLabel, SplitLines } from "./Reveal";
+import { Layers3D } from "./Illustration3D";
 
 const field =
   "w-full rounded-xl border border-border bg-background/40 px-4 py-3.5 text-sm outline-none transition-colors placeholder:text-muted-foreground/70 focus:border-accent focus:ring-1 focus:ring-accent";
