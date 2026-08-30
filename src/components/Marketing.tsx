@@ -19,10 +19,10 @@ export function Marketing() {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start end", "end start"] });
   const x = useTransform(scrollYProgress, [0, 1], ["3%", "-3%"]);
-  const [i, setI] = useState(0);
+  const [w, setW] = useState(0);
 
   useEffect(() => {
-    const id = setInterval(() => setI((v) => (v + 1) % WORDS.length), 2200);
+    const id = setInterval(() => setW((v) => (v + 1) % WORDS.length), 2200);
     return () => clearInterval(id);
   }, []);
 
@@ -41,7 +41,7 @@ export function Marketing() {
           <span className="relative inline-flex h-[1.05em] min-w-[7ch] items-baseline overflow-hidden">
             <AnimatePresence mode="wait">
               <motion.span
-                key={WORDS[i]}
+                key={WORDS[w]}
                 initial={{ y: "100%", opacity: 0, rotateX: -60 }}
                 animate={{ y: "0%", opacity: 1, rotateX: 0 }}
                 exit={{ y: "-100%", opacity: 0, rotateX: 60 }}
@@ -49,14 +49,14 @@ export function Marketing() {
                 className="display-lg accent-text inline-block whitespace-nowrap"
                 style={{ transformOrigin: "50% 100%" }}
               >
-                {WORDS[i]}
+                {WORDS[w]}
               </motion.span>
             </AnimatePresence>
           </span>
         </motion.div>
 
 
-        <div className="mt-12 grid gap-4 sm:grid-cols-3 lg:grid-cols-6">
+        <div className="mt-10 grid gap-4 sm:grid-cols-3 lg:grid-cols-6">
           {CHANNELS.map((c, i) => (
             <motion.div
               key={c.label}
@@ -86,7 +86,7 @@ export function Marketing() {
         </div>
 
         <Reveal delay={0.15}>
-          <p className="display-lg mt-14 max-w-5xl">
+          <p className="mt-12 max-w-4xl font-display text-3xl font-extrabold leading-[1.05] tracking-tight sm:text-5xl">
             WE DON'T JUST BUILD YOUR WEBSITE.{" "}
             <span className="accent-text">WE HELP BUILD YOUR BUSINESS.</span>
           </p>
