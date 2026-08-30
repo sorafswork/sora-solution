@@ -38,13 +38,13 @@ export function Marketing() {
 
         <motion.div style={{ x }} className="mt-6 flex flex-wrap items-baseline gap-x-5">
           <span className="display-lg text-muted-foreground/40">WE BUILD</span>
-          <span className="relative inline-flex h-[1.05em] min-w-[7ch] items-baseline overflow-hidden">
+          <span className="relative inline-block min-w-[7ch] align-baseline">
             <AnimatePresence mode="wait">
               <motion.span
                 key={WORDS[w]}
-                initial={{ y: "100%", opacity: 0, rotateX: -60 }}
-                animate={{ y: "0%", opacity: 1, rotateX: 0 }}
-                exit={{ y: "-100%", opacity: 0, rotateX: 60 }}
+                initial={{ opacity: 0, y: 18, filter: "blur(10px)" }}
+                animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+                exit={{ opacity: 0, y: -18, filter: "blur(10px)" }}
                 transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
                 className="display-lg accent-text inline-block whitespace-nowrap"
                 style={{ transformOrigin: "50% 100%" }}

@@ -15,7 +15,7 @@ export function WhySora() {
             </h2>
           </div>
           <div className="hidden justify-center lg:flex">
-            <Orbit3D size={320} />
+            <Orbit3D size={230} />
           </div>
         </div>
 
