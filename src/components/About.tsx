@@ -25,8 +25,14 @@ const PILLARS = [
 
 export function About() {
   return (
-    <section id="about" className="relative section-y">
-      <div className="mx-auto max-w-[1400px] px-5 sm:px-8">
+    <section id="about" className="relative overflow-hidden section-y">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute -right-10 top-10 hidden opacity-70 lg:block"
+      >
+        <Cube3D size={110} />
+      </div>
+      <div className="relative mx-auto max-w-[1400px] px-5 sm:px-8">
         <SectionLabel>Who we are</SectionLabel>
         <div className="mt-6 grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
           <h2 className="display-lg">
