@@ -28,7 +28,7 @@ export function ContactForm() {
   }
 
   return (
-    <section id="contact" className="relative overflow-hidden py-14 sm:py-20">
+    <section id="contact" className="relative overflow-hidden section-y">
       <div
         className="pointer-events-none absolute left-1/2 top-1/3 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-accent/10 blur-[140px]"
         aria-hidden

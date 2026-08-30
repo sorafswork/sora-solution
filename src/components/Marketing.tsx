@@ -21,7 +21,7 @@ export function Marketing() {
   const x = useTransform(scrollYProgress, [0, 1], ["8%", "-8%"]);
 
   return (
-    <section ref={ref} className="grain relative overflow-hidden py-14 sm:py-20">
+    <section ref={ref} className="grain relative overflow-hidden section-y">
       <div className="mx-auto max-w-[1400px] px-5 sm:px-8">
         <SectionLabel>Digital marketing</SectionLabel>
         <Reveal delay={0.1}>
