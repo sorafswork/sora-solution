@@ -93,7 +93,7 @@ export function Portfolio() {
   const list = active === "ALL" ? PROJECTS : PROJECTS.filter((p) => p.category === active);
 
   return (
-    <section id="works" className="relative py-14 sm:py-20">
+    <section id="works" className="relative section-y">
       <div className="mx-auto max-w-[1400px] px-5 sm:px-8">
         <SectionLabel>Our work</SectionLabel>
         <div className="mt-6 flex flex-wrap items-end justify-between gap-6">

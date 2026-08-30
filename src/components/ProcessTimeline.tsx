@@ -9,7 +9,7 @@ export function ProcessTimeline() {
   const height = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
   return (
-    <section id="process" className="relative py-14 sm:py-20">
+    <section id="process" className="relative section-y">
       <div className="mx-auto max-w-[1400px] px-5 sm:px-8">
         <SectionLabel>Work process</SectionLabel>
         <h2 className="display-lg mt-6 max-w-3xl">

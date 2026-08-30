@@ -11,7 +11,7 @@ export function StorySection() {
   const rotate = useTransform(scrollYProgress, [0, 1], [0, 220]);
 
   return (
-    <section ref={ref} className="relative overflow-hidden py-16 sm:py-24">
+    <section ref={ref} className="relative overflow-hidden section-y">
       <div className="mx-auto max-w-[1400px] px-5 sm:px-8">
         <div className="grid gap-14 lg:grid-cols-2 lg:items-center">
           <div>

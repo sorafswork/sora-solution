@@ -1,15 +1,24 @@
 import { motion } from "motion/react";
 import { BADGES, EXTRA_SERVICES } from "@/lib/site-data";
 import { SectionLabel, SplitLines } from "./Reveal";
+import { Orbit3D } from "./Illustration3D";
 
 export function WhySora() {
   return (
-    <section className="relative py-14 sm:py-20">
+    <section className="relative overflow-hidden section-y">
       <div className="mx-auto max-w-[1400px] px-5 sm:px-8">
-        <SectionLabel>Why SoRa</SectionLabel>
-        <h2 className="display-lg mt-6 max-w-3xl">
-          <SplitLines lines={["BUILT ON QUALITY.", "BACKED BY CARE."]} />
-        </h2>
+        <div className="grid items-center gap-10 lg:grid-cols-[1.2fr_0.8fr]">
+          <div>
+            <SectionLabel>Why SoRa</SectionLabel>
+            <h2 className="display-lg mt-6 max-w-3xl">
+              <SplitLines lines={["BUILT ON QUALITY.", "BACKED BY CARE."]} />
+            </h2>
+          </div>
+          <div className="hidden justify-center lg:flex">
+            <Orbit3D size={230} />
+          </div>
+        </div>
+
 
         <div className="mt-10 flex flex-wrap gap-3" style={{ perspective: 900 }}>
           {BADGES.map((b, i) => (

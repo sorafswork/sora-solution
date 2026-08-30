@@ -2,6 +2,7 @@ import { motion } from "motion/react";
 import { useState } from "react";
 import { CONTACT, SERVICE_OPTIONS } from "@/lib/site-data";
 import { Reveal, SectionLabel, SplitLines } from "./Reveal";
+import { Layers3D } from "./Illustration3D";
 
 const field =
   "w-full rounded-xl border border-border bg-background/40 px-4 py-3.5 text-sm outline-none transition-colors placeholder:text-muted-foreground/70 focus:border-accent focus:ring-1 focus:ring-accent";
@@ -28,7 +29,7 @@ export function ContactForm() {
   }
 
   return (
-    <section id="contact" className="relative overflow-hidden py-14 sm:py-20">
+    <section id="contact" className="relative overflow-hidden section-y">
       <div
         className="pointer-events-none absolute left-1/2 top-1/3 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-accent/10 blur-[140px]"
         aria-hidden
@@ -81,6 +82,10 @@ export function ContactForm() {
               </Reveal>
             ))}
           </dl>
+
+          <div className="mt-12 hidden lg:block" aria-hidden>
+            <Layers3D />
+          </div>
         </div>
 
         <motion.form

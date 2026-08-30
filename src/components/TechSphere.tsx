@@ -23,6 +23,9 @@ export function TechSphere() {
   const reduced = useReducedMotion();
   const [angle, setAngle] = useState(0);
   const [tilt, setTilt] = useState(0.35);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => setMounted(true), []);
   const raf = useRef(0);
 
   useEffect(() => {
@@ -42,7 +45,7 @@ export function TechSphere() {
   const radius = 210;
 
   return (
-    <section id="tech" className="relative overflow-hidden py-14 sm:py-20">
+    <section id="tech" className="relative overflow-hidden section-y">
       <div className="mx-auto grid max-w-[1400px] items-center gap-12 px-5 sm:px-8 lg:grid-cols-2">
         <div>
           <SectionLabel>Tech universe</SectionLabel>
@@ -75,7 +78,7 @@ export function TechSphere() {
         >
           <div className="absolute inset-[18%] rounded-full bg-accent/10 blur-3xl" aria-hidden />
           <div className="absolute inset-0" aria-hidden={reduced ? undefined : true}>
-            {TECHNOLOGIES.map((tech, i) => {
+            {mounted && TECHNOLOGIES.map((tech, i) => {
               const p = points[i]!;
               const ca = Math.cos(angle);
               const sa = Math.sin(angle);
