@@ -39,7 +39,7 @@ export function Hero() {
   }, [mx, my]);
 
   return (
-    <section id="top" className="grain relative flex min-h-[88svh] items-center overflow-hidden pt-24 sm:pt-28">
+    <section id="top" className="grain relative flex min-h-[84svh] items-center overflow-hidden pt-20 sm:pt-24">
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 opacity-[0.5]"
@@ -56,7 +56,7 @@ export function Hero() {
         style={{ background: "color-mix(in oklab, var(--accent) 22%, transparent)" }}
       />
 
-      <div className="relative mx-auto grid w-full max-w-[1600px] gap-10 px-5 pb-10 sm:px-8 xl:px-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+      <div className="relative mx-auto grid w-full max-w-[1600px] gap-8 px-5 pb-6 sm:px-8 xl:px-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
         <div>
           <motion.p
             className="eyebrow"
@@ -67,7 +67,7 @@ export function Hero() {
             Welcome to SoRa Innovative Solution
           </motion.p>
 
-          <h1 className="display-xl mt-7">
+          <h1 className="display-xl mt-5">
             <SplitLines
               lines={["BUILDING DIGITAL", "EXPERIENCES THAT"]}
               delay={0.25}
@@ -85,7 +85,7 @@ export function Hero() {
           </h1>
 
           <motion.div
-            className="mt-9 max-w-xl"
+            className="mt-6 max-w-xl"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.75, duration: 0.9 }}
@@ -98,7 +98,7 @@ export function Hero() {
           </motion.div>
 
           <motion.div
-            className="mt-11 flex flex-wrap items-center gap-4"
+            className="mt-7 flex flex-wrap items-center gap-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.9, duration: 0.9 }}
@@ -124,7 +124,7 @@ export function Hero() {
 
         {/* 3D-ish floating environment */}
         <motion.div
-          className="relative hidden h-[560px] lg:block"
+          className="relative hidden h-[500px] lg:block"
           style={{ perspective: 1400 }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
