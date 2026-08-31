@@ -28,7 +28,7 @@ export function Marketing() {
 
   return (
     <section ref={ref} className="grain relative overflow-hidden section-y">
-      <div className="mx-auto max-w-[1400px] px-5 sm:px-8">
+      <div className="mx-auto max-w-[1600px] px-5 sm:px-8 xl:px-12">
         <SectionLabel>Digital marketing</SectionLabel>
         <Reveal delay={0.1}>
           <p className="mt-6 font-display text-xl font-bold tracking-tight sm:text-3xl">

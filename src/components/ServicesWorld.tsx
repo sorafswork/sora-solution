@@ -6,7 +6,7 @@ import { Tilt3D } from "./Tilt3D";
 export function ServicesWorld() {
   return (
     <section id="services" className="relative overflow-hidden section-y">
-      <div className="mx-auto max-w-[1400px] px-5 sm:px-8">
+      <div className="mx-auto max-w-[1600px] px-5 sm:px-8 xl:px-12">
         <SectionLabel>The digital world</SectionLabel>
         <h2 className="display-lg mt-6 max-w-4xl">
           <SplitLines lines={["EVERYTHING YOUR", "BRAND NEEDS."]} />

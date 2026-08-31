@@ -8,7 +8,7 @@ export function FAQ() {
 
   return (
     <section id="faq" className="relative section-y">
-      <div className="mx-auto grid max-w-[1400px] gap-10 px-5 sm:px-8 lg:grid-cols-[0.8fr_1.2fr]">
+      <div className="mx-auto grid max-w-[1600px] gap-10 px-5 sm:px-8 xl:px-12 lg:grid-cols-[0.8fr_1.2fr]">
         <div>
           <SectionLabel>FAQ</SectionLabel>
           <h2 className="mt-6 font-display text-5xl font-extrabold leading-[0.95] tracking-tighter sm:text-6xl">

@@ -94,7 +94,7 @@ export function Portfolio() {
 
   return (
     <section id="works" className="relative section-y">
-      <div className="mx-auto max-w-[1400px] px-5 sm:px-8">
+      <div className="mx-auto max-w-[1600px] px-5 sm:px-8 xl:px-12">
         <SectionLabel>Our work</SectionLabel>
         <div className="mt-6 flex flex-wrap items-end justify-between gap-6">
           <h2 className="display-lg">

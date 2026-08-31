@@ -12,7 +12,7 @@ export function StorySection() {
 
   return (
     <section ref={ref} className="relative overflow-hidden section-y">
-      <div className="mx-auto max-w-[1400px] px-5 sm:px-8">
+      <div className="mx-auto max-w-[1600px] px-5 sm:px-8 xl:px-12">
         <div className="grid gap-14 lg:grid-cols-2 lg:items-center">
           <div>
             <h2 className="display-lg">

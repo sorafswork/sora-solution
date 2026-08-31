@@ -6,7 +6,7 @@ import { Orbit3D } from "./Illustration3D";
 export function WhySora() {
   return (
     <section className="relative overflow-hidden section-y">
-      <div className="mx-auto max-w-[1400px] px-5 sm:px-8">
+      <div className="mx-auto max-w-[1600px] px-5 sm:px-8 xl:px-12">
         <div className="grid items-center gap-10 lg:grid-cols-[1.2fr_0.8fr]">
           <div>
             <SectionLabel>Why SoRa</SectionLabel>

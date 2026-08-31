@@ -13,7 +13,7 @@ const NAV = [
 export function Footer() {
   return (
     <footer className="relative border-t border-border pb-8 pt-14">
-      <div className="mx-auto max-w-[1400px] px-5 sm:px-8">
+      <div className="mx-auto max-w-[1600px] px-5 sm:px-8 xl:px-12">
         <div className="grid gap-10 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <div>
             <img
