@@ -39,7 +39,7 @@ export function Hero() {
   }, [mx, my]);
 
   return (
-    <section id="top" className="grain relative flex min-h-svh items-center overflow-hidden pt-28">
+    <section id="top" className="grain relative flex min-h-[88svh] items-center overflow-hidden pt-24 sm:pt-28">
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 opacity-[0.5]"
