@@ -124,7 +124,7 @@ export function Portfolio() {
           ))}
         </div>
 
-        <div className="mt-12 space-y-16">
+        <div className="mt-8 space-y-10">
           <AnimatePresence mode="popLayout">
             {list.map((p, i) => (
               <ProjectShowcase key={p.n} project={p} index={i} />

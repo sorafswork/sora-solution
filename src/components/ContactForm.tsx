@@ -83,7 +83,7 @@ export function ContactForm() {
             ))}
           </dl>
 
-          <div className="mt-12 hidden lg:block" aria-hidden>
+          <div className="mt-8 hidden lg:block" aria-hidden>
             <Layers3D />
           </div>
         </div>

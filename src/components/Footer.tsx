@@ -119,7 +119,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 flex flex-col gap-3 border-t border-border pt-6 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-8 flex flex-col gap-3 border-t border-border pt-6 sm:flex-row sm:items-center sm:justify-between">
           <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
             © {new Date().getFullYear()} SoRa Innovative Solution
           </p>
