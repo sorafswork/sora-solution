@@ -33,7 +33,7 @@ export function Navbar() {
   return (
     <header className="fixed inset-x-0 top-0 z-[100]">
       <div
-        className={`mx-auto flex max-w-[1400px] items-center justify-between px-5 transition-all duration-500 sm:px-8 ${
+        className={`mx-auto flex max-w-[1600px] items-center justify-between px-5 xl:px-12 transition-all duration-500 sm:px-8 ${
           scrolled ? "my-3 rounded-2xl py-3 glass" : "py-6"
         }`}
       >

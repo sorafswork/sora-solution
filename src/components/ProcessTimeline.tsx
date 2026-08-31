@@ -10,7 +10,7 @@ export function ProcessTimeline() {
 
   return (
     <section id="process" className="relative section-y">
-      <div className="mx-auto max-w-[1400px] px-5 sm:px-8">
+      <div className="mx-auto max-w-[1600px] px-5 sm:px-8 xl:px-12">
         <SectionLabel>Work process</SectionLabel>
         <h2 className="display-lg mt-6 max-w-3xl">
           <SplitLines lines={["FROM IDEA", "TO LAUNCH."]} />

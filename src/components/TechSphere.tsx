@@ -46,7 +46,7 @@ export function TechSphere() {
 
   return (
     <section id="tech" className="relative overflow-hidden section-y">
-      <div className="mx-auto grid max-w-[1400px] items-center gap-12 px-5 sm:px-8 lg:grid-cols-2">
+      <div className="mx-auto grid max-w-[1600px] items-center gap-10 px-5 sm:px-8 xl:px-12 lg:grid-cols-2">
         <div>
           <SectionLabel>Tech universe</SectionLabel>
           <h2 className="mt-6 font-display text-5xl font-extrabold leading-[0.95] tracking-tighter sm:text-7xl">

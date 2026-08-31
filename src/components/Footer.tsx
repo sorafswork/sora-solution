@@ -13,7 +13,7 @@ const NAV = [
 export function Footer() {
   return (
     <footer className="relative border-t border-border pb-8 pt-14">
-      <div className="mx-auto max-w-[1400px] px-5 sm:px-8">
+      <div className="mx-auto max-w-[1600px] px-5 sm:px-8 xl:px-12">
         <div className="grid gap-10 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <div>
             <img
@@ -119,7 +119,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 flex flex-col gap-3 border-t border-border pt-6 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-8 flex flex-col gap-3 border-t border-border pt-6 sm:flex-row sm:items-center sm:justify-between">
           <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
             © {new Date().getFullYear()} SoRa Innovative Solution
           </p>

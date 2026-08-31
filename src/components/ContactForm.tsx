@@ -34,7 +34,7 @@ export function ContactForm() {
         className="pointer-events-none absolute left-1/2 top-1/3 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-accent/10 blur-[140px]"
         aria-hidden
       />
-      <div className="relative mx-auto grid max-w-[1400px] gap-12 px-5 sm:px-8 lg:grid-cols-2">
+      <div className="relative mx-auto grid max-w-[1600px] gap-10 px-5 sm:px-8 xl:px-12 lg:grid-cols-2">
         <div>
           <SectionLabel>Contact</SectionLabel>
           <h2 className="mt-6 font-display text-5xl font-extrabold leading-[0.95] tracking-tighter sm:text-7xl">
@@ -83,7 +83,7 @@ export function ContactForm() {
             ))}
           </dl>
 
-          <div className="mt-12 hidden lg:block" aria-hidden>
+          <div className="mt-8 hidden lg:block" aria-hidden>
             <Layers3D />
           </div>
         </div>

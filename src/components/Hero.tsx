@@ -39,7 +39,7 @@ export function Hero() {
   }, [mx, my]);
 
   return (
-    <section id="top" className="grain relative flex min-h-svh items-center overflow-hidden pt-28">
+    <section id="top" className="grain relative flex min-h-[88svh] items-center overflow-hidden pt-24 sm:pt-28">
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 opacity-[0.5]"
@@ -56,7 +56,7 @@ export function Hero() {
         style={{ background: "color-mix(in oklab, var(--accent) 22%, transparent)" }}
       />
 
-      <div className="relative mx-auto grid w-full max-w-[1400px] gap-12 px-5 pb-16 sm:px-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+      <div className="relative mx-auto grid w-full max-w-[1600px] gap-10 px-5 pb-10 sm:px-8 xl:px-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
         <div>
           <motion.p
             className="eyebrow"

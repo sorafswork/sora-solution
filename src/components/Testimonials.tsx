@@ -15,7 +15,7 @@ export function Testimonials() {
 
   return (
     <section id="testimonials" className="relative section-y">
-      <div className="mx-auto max-w-[1100px] px-5 sm:px-8">
+      <div className="mx-auto max-w-[1280px] px-5 sm:px-8">
         <SectionLabel>Client voices</SectionLabel>
 
         <div className="relative mt-10 min-h-[300px] sm:min-h-[260px]">

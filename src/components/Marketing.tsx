@@ -28,7 +28,7 @@ export function Marketing() {
 
   return (
     <section ref={ref} className="grain relative overflow-hidden section-y">
-      <div className="mx-auto max-w-[1400px] px-5 sm:px-8">
+      <div className="mx-auto max-w-[1600px] px-5 sm:px-8 xl:px-12">
         <SectionLabel>Digital marketing</SectionLabel>
         <Reveal delay={0.1}>
           <p className="mt-6 font-display text-xl font-bold tracking-tight sm:text-3xl">
@@ -86,7 +86,7 @@ export function Marketing() {
         </div>
 
         <Reveal delay={0.15}>
-          <p className="mt-12 max-w-4xl font-display text-3xl font-extrabold leading-[1.05] tracking-tight sm:text-5xl">
+          <p className="mt-8 max-w-5xl font-display text-3xl font-extrabold leading-[1.05] tracking-tight sm:text-5xl">
             WE DON'T JUST BUILD YOUR WEBSITE.{" "}
             <span className="accent-text">WE HELP BUILD YOUR BUSINESS.</span>
           </p>
