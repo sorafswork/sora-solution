@@ -41,7 +41,7 @@ export function Hero() {
   }, [mx, my]);
 
   return (
-    <section id="top" className="grain relative flex min-h-[78svh] items-center overflow-hidden pt-16 sm:pt-20">
+    <section id="top" className="grain relative flex min-h-[64svh] items-center overflow-hidden pt-24 sm:pt-28">
       <video
         className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-[0.45] motion-reduce:hidden"
         src={heroLoop.url}
