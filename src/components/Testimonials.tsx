@@ -18,7 +18,7 @@ export function Testimonials() {
       <div className="mx-auto max-w-[1280px] px-5 sm:px-8">
         <SectionLabel>Client voices</SectionLabel>
 
-        <div className="relative mt-10 min-h-[300px] sm:min-h-[260px]">
+        <div className="relative mt-5 min-h-[300px] sm:min-h-[260px]">
           <AnimatePresence mode="wait">
             <motion.blockquote
               key={i}
@@ -32,7 +32,7 @@ export function Testimonials() {
                 {t.quote}
                 <span className="accent-text">”</span>
               </p>
-              <footer className="mt-8 flex items-center gap-4">
+              <footer className="mt-5 flex items-center gap-4">
                 <span
                   className="flex h-11 w-11 items-center justify-center rounded-full border border-accent/40 font-display text-sm font-bold accent-text"
                   aria-hidden
@@ -50,7 +50,7 @@ export function Testimonials() {
           </AnimatePresence>
         </div>
 
-        <div className="mt-10 flex gap-3">
+        <div className="mt-5 flex gap-3">
           {TESTIMONIALS.map((item, idx) => (
             <button
               key={item.name}

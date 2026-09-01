@@ -44,7 +44,7 @@ export function Navbar() {
           </span>
         </a>
 
-        <nav aria-label="Primary" className="hidden items-center gap-8 lg:flex">
+        <nav aria-label="Primary" className="hidden items-center gap-6 lg:flex">
           {LINKS.map((l) => (
             <a
               key={l.href}
@@ -94,7 +94,7 @@ export function Navbar() {
                 <X className="h-4 w-4" aria-hidden />
               </button>
             </div>
-            <nav aria-label="Mobile" className="mt-12 flex flex-1 flex-col justify-center gap-2">
+            <nav aria-label="Mobile" className="mt-5 flex flex-1 flex-col justify-center gap-2">
               {LINKS.map((l, i) => (
                 <motion.a
                   key={l.href}

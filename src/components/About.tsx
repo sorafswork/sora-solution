@@ -34,7 +34,7 @@ export function About() {
       </div>
       <div className="relative mx-auto max-w-[1600px] px-5 sm:px-8 xl:px-12">
         <SectionLabel>Who we are</SectionLabel>
-        <div className="mt-6 grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
+        <div className="mt-6 grid gap-6 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
           <h2 className="display-lg">
             <SplitLines lines={["MORE THAN A", "DIGITAL AGENCY."]} />
           </h2>
@@ -46,7 +46,7 @@ export function About() {
           </Reveal>
         </div>
 
-        <div className="mt-10 grid gap-5 md:grid-cols-3" style={{ perspective: 1200 }}>
+        <div className="mt-5 grid gap-5 md:grid-cols-3" style={{ perspective: 1200 }}>
           {PILLARS.map((p, i) => (
             <motion.div
               key={p.title}
@@ -62,7 +62,7 @@ export function About() {
                 style={{ background: "color-mix(in oklab, var(--accent) 45%, transparent)" }}
               />
               <p.icon className="h-7 w-7 text-accent" aria-hidden />
-              <h3 className="mt-8 font-display text-3xl font-extrabold tracking-tight">{p.title}</h3>
+              <h3 className="mt-5 font-display text-3xl font-extrabold tracking-tight">{p.title}</h3>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{p.copy}</p>
               </Tilt3D>
             </motion.div>

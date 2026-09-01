@@ -13,7 +13,7 @@ export function StorySection() {
   return (
     <section ref={ref} className="relative overflow-hidden section-y">
       <div className="mx-auto max-w-[1600px] px-5 sm:px-8 xl:px-12">
-        <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
+        <div className="grid gap-7 lg:grid-cols-2 lg:items-center">
           <div>
             <h2 className="display-lg">
               <SplitLines lines={["EVERY GREAT", "BUSINESS", "STARTS SMALL."]} />
@@ -24,7 +24,7 @@ export function StorySection() {
               </p>
             </Reveal>
 
-            <ol className="mt-8 space-y-1">
+            <ol className="mt-5 space-y-1">
               {JOURNEY.map((step, i) => (
                 <motion.li
                   key={step}
@@ -66,7 +66,7 @@ export function StorySection() {
         </div>
 
         <Reveal delay={0.1}>
-          <p className="display-lg mt-10 max-w-5xl">
+          <p className="display-lg mt-5 max-w-5xl">
             WE TURN IDEAS INTO <span className="accent-text">DIGITAL EXPERIENCES.</span>
           </p>
         </Reveal>

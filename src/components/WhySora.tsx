@@ -7,7 +7,7 @@ export function WhySora() {
   return (
     <section className="relative overflow-hidden section-y">
       <div className="mx-auto max-w-[1600px] px-5 sm:px-8 xl:px-12">
-        <div className="grid items-center gap-10 lg:grid-cols-[1.2fr_0.8fr]">
+        <div className="grid items-center gap-7 lg:grid-cols-[1.2fr_0.8fr]">
           <div>
             <SectionLabel>Why SoRa</SectionLabel>
             <h2 className="display-lg mt-6 max-w-3xl">
@@ -20,7 +20,7 @@ export function WhySora() {
         </div>
 
 
-        <div className="mt-10 flex flex-wrap gap-3" style={{ perspective: 900 }}>
+        <div className="mt-5 flex flex-wrap gap-3" style={{ perspective: 900 }}>
           {BADGES.map((b, i) => (
             <motion.span
               key={b}
@@ -37,7 +37,7 @@ export function WhySora() {
           ))}
         </div>
 
-        <div className="mt-10 grid gap-px overflow-hidden rounded-2xl border border-border/70 bg-border/60 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-5 grid gap-px overflow-hidden rounded-2xl border border-border/70 bg-border/60 sm:grid-cols-2 lg:grid-cols-4">
           {EXTRA_SERVICES.map((s, i) => (
             <motion.div
               key={s.title}

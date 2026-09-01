@@ -56,7 +56,7 @@ export function Hero() {
         style={{ background: "color-mix(in oklab, var(--accent) 22%, transparent)" }}
       />
 
-      <div className="relative mx-auto grid w-full max-w-[1600px] gap-8 px-5 pb-6 sm:px-8 xl:px-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+      <div className="relative mx-auto grid w-full max-w-[1600px] gap-6 px-5 pb-6 sm:px-8 xl:px-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
         <div>
           <motion.p
             className="eyebrow"
@@ -98,7 +98,7 @@ export function Hero() {
           </motion.div>
 
           <motion.div
-            className="mt-7 flex flex-wrap items-center gap-4"
+            className="mt-5 flex flex-wrap items-center gap-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.9, duration: 0.9 }}

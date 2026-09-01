@@ -56,7 +56,7 @@ export function Marketing() {
         </motion.div>
 
 
-        <div className="mt-10 grid gap-4 sm:grid-cols-3 lg:grid-cols-6">
+        <div className="mt-5 grid gap-4 sm:grid-cols-3 lg:grid-cols-6">
           {CHANNELS.map((c, i) => (
             <motion.div
               key={c.label}
@@ -86,7 +86,7 @@ export function Marketing() {
         </div>
 
         <Reveal delay={0.15}>
-          <p className="mt-8 max-w-5xl font-display text-3xl font-extrabold leading-[1.05] tracking-tight sm:text-5xl">
+          <p className="mt-5 max-w-5xl font-display text-3xl font-extrabold leading-[1.05] tracking-tight sm:text-5xl">
             WE DON'T JUST BUILD YOUR WEBSITE.{" "}
             <span className="accent-text">WE HELP BUILD YOUR BUSINESS.</span>
           </p>
