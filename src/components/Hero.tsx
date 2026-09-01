@@ -41,7 +41,7 @@ export function Hero() {
   }, [mx, my]);
 
   return (
-    <section id="top" className="grain relative flex min-h-[64svh] items-center overflow-hidden pt-24 sm:pt-28">
+    <section id="top" className="grain relative flex min-h-[62svh] items-center overflow-hidden pt-20 sm:pt-24 pb-14">
       <video
         className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-[0.45] motion-reduce:hidden"
         src={heroLoop.url}
@@ -145,7 +145,7 @@ export function Hero() {
 
         {/* 3D-ish floating environment */}
         <motion.div
-          className="relative hidden h-[440px] lg:block"
+          className="relative hidden h-[380px] lg:block"
           style={{ perspective: 1400 }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
