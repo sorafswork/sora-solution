@@ -2,6 +2,8 @@ import { motion, useMotionValue, useSpring, useTransform } from "motion/react";
 import { useEffect } from "react";
 import { ArrowDown, ArrowRight, BarChart3, Sparkles } from "lucide-react";
 import { SplitLines } from "./Reveal";
+import heroLoop from "../../public/brand/sora-hero-loop.mp4.asset.json";
+
 
 function Panel({
   depth,
