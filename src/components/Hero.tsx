@@ -2,6 +2,8 @@ import { motion, useMotionValue, useSpring, useTransform } from "motion/react";
 import { useEffect } from "react";
 import { ArrowDown, ArrowRight, BarChart3, Sparkles } from "lucide-react";
 import { SplitLines } from "./Reveal";
+import heroLoop from "../../public/brand/sora-hero-loop.mp4.asset.json";
+
 
 function Panel({
   depth,
@@ -40,7 +42,26 @@ export function Hero() {
 
   return (
     <section id="top" className="grain relative flex min-h-[78svh] items-center overflow-hidden pt-16 sm:pt-20">
+      <video
+        className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-[0.45] motion-reduce:hidden"
+        src={heroLoop.url}
+        autoPlay
+        loop
+        muted
+        playsInline
+        preload="auto"
+        aria-hidden
+      />
       <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0"
+        style={{
+          background:
+            "linear-gradient(to bottom, color-mix(in oklab, var(--background) 72%, transparent), color-mix(in oklab, var(--background) 58%, transparent) 45%, var(--background))",
+        }}
+      />
+      <div
+
         aria-hidden
         className="pointer-events-none absolute inset-0 opacity-[0.5]"
         style={{
