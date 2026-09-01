@@ -46,17 +46,17 @@ export function TechSphere() {
 
   return (
     <section id="tech" className="relative overflow-hidden section-y">
-      <div className="mx-auto grid max-w-[1600px] items-center gap-10 px-5 sm:px-8 xl:px-12 lg:grid-cols-2">
+      <div className="mx-auto grid max-w-[1600px] items-center gap-7 px-5 sm:px-8 xl:px-12 lg:grid-cols-2">
         <div>
           <SectionLabel>Tech universe</SectionLabel>
           <h2 className="mt-6 font-display text-5xl font-extrabold leading-[0.95] tracking-tighter sm:text-7xl">
             <SplitLines lines={["Tools that", "orbit the craft."]} />
           </h2>
-          <p className="mt-7 max-w-lg text-lg leading-relaxed text-muted-foreground">
+          <p className="mt-5 max-w-lg text-lg leading-relaxed text-muted-foreground">
             We pick technology for longevity, speed and maintainability — never for hype. Every
             build ships on a stack your team can grow with.
           </p>
-          <div className="mt-10 flex flex-wrap gap-2">
+          <div className="mt-5 flex flex-wrap gap-2">
             {TECHNOLOGIES.slice(0, 8).map((t) => (
               <span
                 key={t}

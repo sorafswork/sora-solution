@@ -12,7 +12,7 @@ export function ServicesWorld() {
           <SplitLines lines={["EVERYTHING YOUR", "BRAND NEEDS."]} />
         </h2>
 
-        <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-5 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {WORLD_SERVICES.map((s, i) => (
             <motion.article
               key={s.n}
@@ -42,7 +42,7 @@ export function ServicesWorld() {
                   {s.n}
                 </span>
               </div>
-              <div className="relative -mt-8 p-6">
+              <div className="relative -mt-5 p-6">
                 <h3 className="font-display text-2xl font-bold tracking-tight">{s.title}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{s.copy}</p>
                 <span className="mt-6 block h-px w-0 bg-accent transition-all duration-500 group-hover:w-full" />
@@ -53,7 +53,7 @@ export function ServicesWorld() {
         </div>
 
         <Reveal delay={0.1}>
-          <p className="mt-10 text-sm text-muted-foreground">
+          <p className="mt-5 text-sm text-muted-foreground">
             Also delivering SEO, UI/UX design, social media and e-commerce development.
           </p>
         </Reveal>

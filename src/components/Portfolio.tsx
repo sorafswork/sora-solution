@@ -15,7 +15,7 @@ function ProjectShowcase({ project, index }: { project: Project; index: number }
       exit={{ opacity: 0, y: 20 }}
       viewport={{ once: true, margin: "-80px" }}
       transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-      className={`grid items-center gap-10 lg:grid-cols-[1.25fr_0.75fr] ${flip ? "lg:[direction:rtl]" : ""}`}
+      className={`grid items-center gap-7 lg:grid-cols-[1.25fr_0.75fr] ${flip ? "lg:[direction:rtl]" : ""}`}
     >
       <motion.a
         href={project.url}
@@ -78,7 +78,7 @@ function ProjectShowcase({ project, index }: { project: Project; index: number }
           target="_blank"
           rel="noopener noreferrer"
           data-cursor="link"
-          className="group mt-8 inline-flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.2em] text-accent"
+          className="group mt-5 inline-flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.2em] text-accent"
         >
           View project
           <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" aria-hidden />
@@ -105,7 +105,7 @@ export function Portfolio() {
           </p>
         </div>
 
-        <div className="mt-9 flex flex-wrap gap-2" role="tablist" aria-label="Project categories">
+        <div className="mt-6 flex flex-wrap gap-2" role="tablist" aria-label="Project categories">
           {PROJECT_CATEGORIES.map((c) => (
             <button
               key={c}
@@ -124,7 +124,7 @@ export function Portfolio() {
           ))}
         </div>
 
-        <div className="mt-8 space-y-10">
+        <div className="mt-5 space-y-7">
           <AnimatePresence mode="popLayout">
             {list.map((p, i) => (
               <ProjectShowcase key={p.n} project={p} index={i} />

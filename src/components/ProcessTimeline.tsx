@@ -16,9 +16,9 @@ export function ProcessTimeline() {
           <SplitLines lines={["FROM IDEA", "TO LAUNCH."]} />
         </h2>
 
-        <div ref={ref} className="relative mt-10 pl-10 sm:pl-20">
+        <div ref={ref} className="relative mt-5 pl-10 sm:pl-20">
 ...
-          <ol className="space-y-10">
+          <ol className="space-y-7">
             {PROCESS.map((p, i) => (
               <motion.li
                 key={p.n}

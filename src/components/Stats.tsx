@@ -35,7 +35,7 @@ export function Stats() {
     <section className="relative border-y border-border/60 section-y">
       <div className="mx-auto max-w-[1600px] px-5 sm:px-8 xl:px-12">
         <SectionLabel>By the numbers</SectionLabel>
-        <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
+        <div className="mt-5 grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
           {STATS.map((s, i) => (
             <motion.div
               key={s.label}

@@ -34,18 +34,18 @@ export function ContactForm() {
         className="pointer-events-none absolute left-1/2 top-1/3 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-accent/10 blur-[140px]"
         aria-hidden
       />
-      <div className="relative mx-auto grid max-w-[1600px] gap-10 px-5 sm:px-8 xl:px-12 lg:grid-cols-2">
+      <div className="relative mx-auto grid max-w-[1600px] gap-7 px-5 sm:px-8 xl:px-12 lg:grid-cols-2">
         <div>
           <SectionLabel>Contact</SectionLabel>
           <h2 className="mt-6 font-display text-5xl font-extrabold leading-[0.95] tracking-tighter sm:text-7xl">
             <SplitLines lines={["Let's build", "something rare."]} />
           </h2>
-          <p className="mt-7 max-w-md text-lg leading-relaxed text-muted-foreground">
+          <p className="mt-5 max-w-md text-lg leading-relaxed text-muted-foreground">
             Tell us about the project. We reply within one business day with a clear scope,
             timeline and price.
           </p>
 
-          <dl className="mt-10 space-y-5">
+          <dl className="mt-5 space-y-5">
             {[
               { label: "Email", value: CONTACT.email, href: `mailto:${CONTACT.email}` },
               {
@@ -83,7 +83,7 @@ export function ContactForm() {
             ))}
           </dl>
 
-          <div className="mt-8 hidden lg:block" aria-hidden>
+          <div className="mt-5 hidden lg:block" aria-hidden>
             <Layers3D />
           </div>
         </div>
@@ -163,7 +163,7 @@ export function ContactForm() {
           <button
             type="submit"
             data-cursor="SEND"
-            className="mt-8 w-full rounded-full bg-accent px-8 py-4 font-display text-sm font-bold uppercase tracking-[0.2em] text-accent-foreground transition-transform hover:scale-[1.01]"
+            className="mt-5 w-full rounded-full bg-accent px-8 py-4 font-display text-sm font-bold uppercase tracking-[0.2em] text-accent-foreground transition-transform hover:scale-[1.01]"
           >
             {sent ? "Opening your mail app…" : "Send enquiry"}
           </button>
