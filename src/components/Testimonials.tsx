@@ -18,7 +18,7 @@ export function Testimonials() {
       <div className="mx-auto max-w-[1280px] px-5 sm:px-8">
         <SectionLabel>Client voices</SectionLabel>
 
-        <div className="relative mt-5 min-h-[300px] sm:min-h-[260px]">
+        <div className="relative mt-5 min-h-[260px] sm:min-h-[220px]">
           <AnimatePresence mode="wait">
             <motion.blockquote
               key={i}

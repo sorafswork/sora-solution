@@ -39,7 +39,7 @@ export function Hero() {
   }, [mx, my]);
 
   return (
-    <section id="top" className="grain relative flex min-h-[84svh] items-center overflow-hidden pt-20 sm:pt-24">
+    <section id="top" className="grain relative flex min-h-[78svh] items-center overflow-hidden pt-16 sm:pt-20">
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 opacity-[0.5]"
@@ -124,7 +124,7 @@ export function Hero() {
 
         {/* 3D-ish floating environment */}
         <motion.div
-          className="relative hidden h-[500px] lg:block"
+          className="relative hidden h-[440px] lg:block"
           style={{ perspective: 1400 }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
