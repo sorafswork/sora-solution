@@ -33,6 +33,18 @@ export function ServicesWorld() {
                   className="h-full w-full object-cover opacity-45 transition-all duration-700 group-hover:scale-110 group-hover:opacity-70"
                   style={{ filter: "grayscale(1) contrast(1.1)" }}
                 />
+                <video
+                  src={s.video}
+                  poster={s.image}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  preload="none"
+                  aria-hidden
+                  className="absolute inset-0 h-full w-full object-cover opacity-45 transition-all duration-700 group-hover:scale-110 group-hover:opacity-70 motion-reduce:hidden"
+                  style={{ filter: "grayscale(1) contrast(1.1)" }}
+                />
                 <div
                   className="absolute inset-0 mix-blend-color transition-opacity duration-700 group-hover:opacity-90"
                   style={{ background: "linear-gradient(140deg, var(--accent), transparent 70%)", opacity: 0.6 }}
