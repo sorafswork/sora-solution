@@ -27,7 +27,7 @@ export function ServicesWorld() {
               <div className="relative h-52 overflow-hidden">
                 <img
                   src={s.image}
-                  alt=""
+                  alt={`${s.title} service preview`}
                   loading="lazy"
                   decoding="async"
                   className="h-full w-full object-cover opacity-45 transition-all duration-700 group-hover:scale-110 group-hover:opacity-70"
