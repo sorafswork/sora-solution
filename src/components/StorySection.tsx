@@ -13,7 +13,7 @@ export function StorySection() {
   return (
     <section ref={ref} className="relative overflow-hidden section-y">
       <div className="mx-auto max-w-[1600px] px-5 sm:px-8 xl:px-12">
-        <div className="grid gap-7 lg:grid-cols-2 lg:items-center">
+        <div className="grid gap-5 lg:grid-cols-2 lg:items-center lg:gap-8">
           <div>
             <h2 className="display-lg">
               <SplitLines lines={["EVERY GREAT", "BUSINESS", "STARTS SMALL."]} />
