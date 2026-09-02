@@ -15,36 +15,42 @@ export const WORLD_SERVICES = [
     title: "Website Development",
     copy: "Fast, SEO-ready websites built with modern frameworks.",
     image: "https://sorainnovativesolution.in/assets/web-dev-BwcLbFcd.jpg",
+    video: "/__l5e/assets-v1/32bf3131-afa0-425b-8ee1-a678bd08bb01/web-dev-loop.mp4",
   },
   {
     n: "02",
     title: "Graphic Design",
     copy: "Eye-catching visuals for posts, ads, and print.",
     image: "https://sorainnovativesolution.in/assets/graphic-design-KCpEuw0j.jpg",
+    video: "/__l5e/assets-v1/ca4f423e-3faf-49f7-acf3-343034d40827/graphic-design-loop.mp4",
   },
   {
     n: "03",
     title: "Brand Identity",
     copy: "Logos, typography and guidelines that create a recognizable identity.",
     image: "https://sorainnovativesolution.in/assets/brand-identity-BFC7sMuU.jpg",
+    video: "/__l5e/assets-v1/e32c1bbf-65da-4211-85b9-6b38115bf0fb/brand-identity-loop.mp4",
   },
   {
     n: "04",
     title: "Content Writing",
     copy: "Copy that communicates, connects and converts.",
     image: "https://sorainnovativesolution.in/assets/content-writing-BhEVuD1n.jpg",
+    video: "/__l5e/assets-v1/14a8f114-d3c6-4930-996e-b1d17c3c6c0e/content-writing-loop.mp4",
   },
   {
     n: "05",
     title: "Digital Marketing",
     copy: "Paid + organic strategy designed to grow reach and revenue.",
     image: "https://sorainnovativesolution.in/assets/digital-marketing-CGaxrXpg.jpg",
+    video: "/__l5e/assets-v1/9ae8d222-c097-48c7-b1fd-cb3851bb0dda/digital-marketing-loop.mp4",
   },
   {
     n: "06",
     title: "Website Maintenance",
     copy: "Updates, security, optimization and ongoing support.",
     image: "https://sorainnovativesolution.in/assets/maintenance-UTDzQqpC.jpg",
+    video: "/__l5e/assets-v1/0e80747d-63a7-4438-a2fe-ad7c227fb56d/maintenance-loop.mp4",
   },
 ];
 
