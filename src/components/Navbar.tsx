@@ -89,7 +89,7 @@ export function Navbar() {
             className="fixed inset-0 z-[110] flex flex-col bg-background px-6 py-6"
           >
             <div className="flex items-center justify-between">
-              <img src="/brand/sora-logo.png" alt="" className="h-9 w-9 object-contain" />
+              <img src="/brand/sora-logo.png" alt="SoRa Innovative Solution logo" className="h-9 w-9 object-contain" />
               <button type="button" onClick={() => setOpen(false)} aria-label="Close menu" className="glass rounded-full p-2.5">
                 <X className="h-4 w-4" aria-hidden />
               </button>
