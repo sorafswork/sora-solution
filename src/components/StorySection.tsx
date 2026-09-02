@@ -19,12 +19,12 @@ export function StorySection() {
               <SplitLines lines={["EVERY GREAT", "BUSINESS", "STARTS SMALL."]} />
             </h2>
             <Reveal delay={0.2}>
-              <p className="mt-5 max-w-md text-lg text-muted-foreground">
+              <p className="mt-3 max-w-md text-base text-muted-foreground">
                 A small idea becomes a digital vision.
               </p>
             </Reveal>
 
-            <ol className="mt-5 space-y-1">
+            <ol className="mt-4">
               {JOURNEY.map((step, i) => (
                 <motion.li
                   key={step}
