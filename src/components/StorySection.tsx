@@ -13,18 +13,18 @@ export function StorySection() {
   return (
     <section ref={ref} className="relative overflow-hidden section-y">
       <div className="mx-auto max-w-[1600px] px-5 sm:px-8 xl:px-12">
-        <div className="grid gap-7 lg:grid-cols-2 lg:items-center">
+        <div className="grid gap-5 lg:grid-cols-2 lg:items-center lg:gap-8">
           <div>
             <h2 className="display-lg">
               <SplitLines lines={["EVERY GREAT", "BUSINESS", "STARTS SMALL."]} />
             </h2>
             <Reveal delay={0.2}>
-              <p className="mt-5 max-w-md text-lg text-muted-foreground">
+              <p className="mt-3 max-w-md text-base text-muted-foreground">
                 A small idea becomes a digital vision.
               </p>
             </Reveal>
 
-            <ol className="mt-5 space-y-1">
+            <ol className="mt-4">
               {JOURNEY.map((step, i) => (
                 <motion.li
                   key={step}
@@ -32,7 +32,7 @@ export function StorySection() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true, margin: "-60px" }}
                   transition={{ duration: 0.7, delay: i * 0.12, ease: [0.22, 1, 0.36, 1] }}
-                  className="flex items-center gap-5 border-b border-border/50 py-4"
+                  className="flex items-center gap-4 border-b border-border/50 py-2.5"
                 >
                   <span className="font-mono text-[10px] text-muted-foreground">0{i + 1}</span>
                   <span className="font-display text-2xl font-bold tracking-tight sm:text-4xl">
@@ -44,7 +44,7 @@ export function StorySection() {
             </ol>
           </div>
 
-          <div className="relative flex h-[300px] items-center justify-center lg:h-[440px]">
+          <div className="relative flex h-[220px] items-center justify-center lg:h-[340px]">
             <motion.div
               style={{ scale, rotate, opacity: glow }}
               className="h-56 w-56 rounded-[38%_62%_58%_42%/48%_38%_62%_52%] sm:h-72 sm:w-72"
@@ -66,7 +66,7 @@ export function StorySection() {
         </div>
 
         <Reveal delay={0.1}>
-          <p className="display-lg mt-5 max-w-5xl">
+          <p className="display-lg mt-6 max-w-5xl">
             WE TURN IDEAS INTO <span className="accent-text">DIGITAL EXPERIENCES.</span>
           </p>
         </Reveal>
