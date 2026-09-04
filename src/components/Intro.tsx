@@ -1,7 +1,6 @@
 import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 import { useReducedMotion } from "@/lib/theme";
-import introVideo from "../../public/brand/sora-intro.mp4.asset.json";
 
 export function Intro({ onDone }: { onDone: () => void }) {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -50,7 +49,7 @@ export function Intro({ onDone }: { onDone: () => void }) {
         >
           <motion.video
             ref={videoRef}
-            src={introVideo.url}
+            src="/brand/sora-intro.mp4"
             muted
             playsInline
             autoPlay
