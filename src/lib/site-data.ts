@@ -9,13 +9,33 @@ export const CONTACT = {
 
 export const JOURNEY = ["IDEA", "DESIGN", "DEVELOPMENT", "MARKETING", "GROWTH"];
 
-export const WORLD_SERVICES = [
+export type WorldService = {
+  n: string;
+  title: string;
+  copy: string;
+  image: string;
+  video: string;
+  detail: string;
+  points: string[];
+};
+
+export const WORLD_SERVICES: WorldService[] = [
   {
     n: "01",
     title: "Website Development",
     copy: "Fast, SEO-ready websites built with modern frameworks.",
     image: "https://sorainnovativesolution.in/assets/web-dev-BwcLbFcd.jpg",
     video: "/brand/services/web-dev-loop.mp4",
+    detail:
+      "We design and engineer websites that feel premium and perform flawlessly. From sleek marketing sites to complex web platforms, every build is fast, responsive, SEO-ready and crafted to convert visitors into customers.",
+    points: [
+      "Custom design — no generic templates",
+      "React, Next.js, TypeScript & modern stacks",
+      "Blazing-fast Core Web Vitals scores",
+      "SEO-ready structure and metadata",
+      "Fully responsive on every device",
+      "CMS & e-commerce integrations",
+    ],
   },
   {
     n: "02",
@@ -23,6 +43,16 @@ export const WORLD_SERVICES = [
     copy: "Eye-catching visuals for posts, ads, and print.",
     image: "https://sorainnovativesolution.in/assets/graphic-design-KCpEuw0j.jpg",
     video: "/brand/services/graphic-design-loop.mp4",
+    detail:
+      "Visuals that stop the scroll. We create striking graphics for social media, advertising, packaging and print — every piece aligned with your brand and designed to drive engagement.",
+    points: [
+      "Social media creatives & campaigns",
+      "Ad banners and promotional designs",
+      "Posters, flyers, brochures & print",
+      "Infographics and pitch decks",
+      "Unlimited revisions until perfect",
+      "Source files in every format",
+    ],
   },
   {
     n: "03",
@@ -30,6 +60,16 @@ export const WORLD_SERVICES = [
     copy: "Logos, typography and guidelines that create a recognizable identity.",
     image: "https://sorainnovativesolution.in/assets/brand-identity-BFC7sMuU.jpg",
     video: "/brand/services/brand-identity-loop.mp4",
+    detail:
+      "A brand is more than a logo. We build complete identity systems — logo, color, typography and guidelines — that make your business instantly recognizable and consistently premium everywhere it appears.",
+    points: [
+      "Logo design with multiple concepts",
+      "Color palette & typography systems",
+      "Brand guidelines document",
+      "Business cards & stationery",
+      "Social media brand kits",
+      "Rebranding for existing businesses",
+    ],
   },
   {
     n: "04",
@@ -37,6 +77,16 @@ export const WORLD_SERVICES = [
     copy: "Copy that communicates, connects and converts.",
     image: "https://sorainnovativesolution.in/assets/content-writing-BhEVuD1n.jpg",
     video: "/brand/services/content-writing-loop.mp4",
+    detail:
+      "Words that work. From website copy to blogs and ad scripts, we write content that speaks your audience's language, builds trust and turns readers into buyers.",
+    points: [
+      "Website & landing page copy",
+      "SEO blogs and articles",
+      "Ad copy and campaign scripts",
+      "Product descriptions that sell",
+      "Email and newsletter writing",
+      "Brand tone-of-voice development",
+    ],
   },
   {
     n: "05",
@@ -44,6 +94,16 @@ export const WORLD_SERVICES = [
     copy: "Paid + organic strategy designed to grow reach and revenue.",
     image: "https://sorainnovativesolution.in/assets/digital-marketing-CGaxrXpg.jpg",
     video: "/brand/services/digital-marketing-loop.mp4",
+    detail:
+      "Growth engineered, not guessed. We combine paid ads, social media, SEO and analytics into one strategy that grows your reach, your leads and your revenue — with reporting you can actually understand.",
+    points: [
+      "Google & Meta ad campaigns",
+      "Social media strategy & management",
+      "Search engine optimization (SEO)",
+      "Funnel and landing page strategy",
+      "Analytics, tracking & reporting",
+      "Monthly growth reviews",
+    ],
   },
   {
     n: "06",
@@ -51,6 +111,16 @@ export const WORLD_SERVICES = [
     copy: "Updates, security, optimization and ongoing support.",
     image: "https://sorainnovativesolution.in/assets/maintenance-UTDzQqpC.jpg",
     video: "/brand/services/maintenance-loop.mp4",
+    detail:
+      "Your website, always at its best. We handle updates, security, backups, speed optimization and content changes — so your site stays fast, safe and current while you focus on business.",
+    points: [
+      "Regular updates & security patches",
+      "Daily/weekly automated backups",
+      "Speed & performance optimization",
+      "Content and design changes",
+      "Uptime monitoring & fixes",
+      "Priority support on every plan",
+    ],
   },
 ];
 
