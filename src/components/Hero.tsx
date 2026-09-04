@@ -2,7 +2,6 @@ import { motion, useMotionValue, useSpring, useTransform } from "motion/react";
 import { useEffect } from "react";
 import { ArrowDown, ArrowRight, BarChart3, Sparkles } from "lucide-react";
 import { SplitLines } from "./Reveal";
-import heroLoop from "../../public/brand/sora-hero-loop.mp4.asset.json";
 
 
 function Panel({
@@ -44,7 +43,7 @@ export function Hero() {
     <section id="top" className="grain relative flex min-h-[62svh] items-center overflow-hidden pt-20 sm:pt-24 pb-14">
       <video
         className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-[0.45] motion-reduce:hidden"
-        src={heroLoop.url}
+        src="/brand/sora-hero-loop.mp4"
         autoPlay
         loop
         muted
