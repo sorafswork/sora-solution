@@ -241,7 +241,7 @@
 }
 
 @utility section-y {
-  padding-block: clamp(1.25rem, 2vw, 2rem);
+  padding-block: clamp(2.75rem, 5.5vw, 5.5rem);
 }
 
 @utility shell {
