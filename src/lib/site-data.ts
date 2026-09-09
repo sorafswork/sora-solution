@@ -1,9 +1,13 @@
 export const CONTACT = {
   email: "sorafs.work@gmail.com",
-  phone: "+91 77087 04523",
-  whatsapp: "917708704523",
-  instagram: "sora_official_id",
+  phone: "+91 95002 82415",
+  phone2: "+91 73977 32494",
+  whatsapp: "919500282415",
+  instagram: "sora.official.id",
   github: "sorafswork",
+  githubUrl: "https://github.com/sorafswork?utm_source=chatgpt.com",
+  linkedin: "sora-solution",
+  linkedinUrl: "https://www.linkedin.com/in/sora-solution",
   website: "www.sorainnovativesolution.in",
 };
 
