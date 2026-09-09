@@ -29,8 +29,16 @@ export function Intro({ onDone }: { onDone: () => void }) {
   useEffect(() => {
     const v = videoRef.current;
     if (!v || reduced) return;
-    v.play().catch(() => {});
+    v.muted = true;
+    v.playsInline = true;
+    const tryPlay = () => {
+      void v.play().catch(() => {});
+    };
+    tryPlay();
+    v.addEventListener("loadeddata", tryPlay);
+    return () => v.removeEventListener("loadeddata", tryPlay);
   }, [reduced]);
+
 
   const skip = () => {
     setStage(3);
