@@ -90,6 +90,15 @@ export function Footer() {
               </li>
               <li>
                 <a
+                  href={`tel:${CONTACT.phone2.replace(/\s/g, "")}`}
+                  data-cursor="link"
+                  className="text-muted-foreground transition-colors hover:text-accent"
+                >
+                  {CONTACT.phone2}
+                </a>
+              </li>
+              <li>
+                <a
                   href={`https://wa.me/${CONTACT.whatsapp}`}
                   data-cursor="link"
                   className="text-muted-foreground transition-colors hover:text-accent"
@@ -108,7 +117,16 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href={`https://github.com/${CONTACT.github}`}
+                  href={CONTACT.linkedinUrl}
+                  data-cursor="link"
+                  className="text-muted-foreground transition-colors hover:text-accent"
+                >
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a
+                  href={CONTACT.githubUrl}
                   data-cursor="link"
                   className="text-muted-foreground transition-colors hover:text-accent"
                 >
