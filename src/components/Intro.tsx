@@ -50,7 +50,7 @@ export function Intro({ onDone }: { onDone: () => void }) {
           <motion.video
             ref={videoRef}
             muted
-            defaultMuted
+
             loop
             playsInline
             autoPlay
