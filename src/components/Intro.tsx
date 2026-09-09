@@ -29,8 +29,16 @@ export function Intro({ onDone }: { onDone: () => void }) {
   useEffect(() => {
     const v = videoRef.current;
     if (!v || reduced) return;
-    v.play().catch(() => {});
+    v.muted = true;
+    v.playsInline = true;
+    const tryPlay = () => {
+      void v.play().catch(() => {});
+    };
+    tryPlay();
+    v.addEventListener("loadeddata", tryPlay);
+    return () => v.removeEventListener("loadeddata", tryPlay);
   }, [reduced]);
+
 
   const skip = () => {
     setStage(3);
@@ -49,17 +57,24 @@ export function Intro({ onDone }: { onDone: () => void }) {
         >
           <motion.video
             ref={videoRef}
-            src="/brand/sora-intro.mp4"
             muted
+
+            loop
             playsInline
             autoPlay
             preload="auto"
+            poster="/brand/sora-intro-poster.jpg"
+            disablePictureInPicture
             aria-hidden
             className="absolute inset-0 h-full w-full object-cover"
             initial={{ opacity: 0, scale: 1.1 }}
             animate={{ opacity: stage >= 3 ? 0.25 : 0.85, scale: 1 }}
             transition={{ duration: 1.4, ease: [0.22, 1, 0.36, 1] }}
-          />
+          >
+            <source src="/brand/sora-intro.webm" type="video/webm" />
+            <source src="/brand/sora-intro.mp4" type="video/mp4" />
+          </motion.video>
+
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_10%,var(--background)_92%)]" />
           <div className="absolute inset-0 bg-background/35" />
 
