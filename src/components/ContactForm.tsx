@@ -34,24 +34,29 @@ export function ContactForm() {
         className="pointer-events-none absolute left-1/2 top-1/3 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-accent/10 blur-[140px]"
         aria-hidden
       />
-      <div className="relative mx-auto grid max-w-[1600px] gap-7 px-5 sm:px-8 xl:px-12 lg:grid-cols-2">
+      <div className="relative mx-auto grid max-w-[1600px] gap-10 px-5 sm:px-8 xl:px-12 lg:grid-cols-2">
         <div>
           <SectionLabel>Contact</SectionLabel>
-          <h2 className="mt-6 font-display text-5xl font-extrabold leading-[0.95] tracking-tighter sm:text-7xl">
+          <h2 className="mt-10 font-display text-5xl font-extrabold leading-[0.95] tracking-tighter sm:text-7xl">
             <SplitLines lines={["Let's build", "something rare."]} />
           </h2>
-          <p className="mt-5 max-w-md text-lg leading-relaxed text-muted-foreground">
+          <p className="mt-8 max-w-md text-lg leading-relaxed text-muted-foreground">
             Tell us about the project. We reply within one business day with a clear scope,
             timeline and price.
           </p>
 
-          <dl className="mt-5 space-y-5">
+          <dl className="mt-10 space-y-6">
             {[
               { label: "Email", value: CONTACT.email, href: `mailto:${CONTACT.email}` },
               {
                 label: "Phone",
                 value: CONTACT.phone,
                 href: `tel:${CONTACT.phone.replace(/\s/g, "")}`,
+              },
+              {
+                label: "Phone",
+                value: CONTACT.phone2,
+                href: `tel:${CONTACT.phone2.replace(/\s/g, "")}`,
               },
               {
                 label: "WhatsApp",
@@ -63,9 +68,19 @@ export function ContactForm() {
                 value: `@${CONTACT.instagram}`,
                 href: `https://instagram.com/${CONTACT.instagram}`,
               },
+              {
+                label: "LinkedIn",
+                value: "Sora Solution",
+                href: CONTACT.linkedinUrl,
+              },
+              {
+                label: "GitHub",
+                value: CONTACT.github,
+                href: CONTACT.githubUrl,
+              },
             ].map((row) => (
-              <Reveal key={row.label}>
-                <div className="flex items-baseline justify-between gap-6 border-b border-border pb-4">
+              <Reveal key={row.label + row.value}>
+                <div className="flex items-baseline justify-between gap-6 border-b border-border pb-5">
                   <dt className="font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground">
                     {row.label}
                   </dt>
@@ -83,7 +98,7 @@ export function ContactForm() {
             ))}
           </dl>
 
-          <div className="mt-5 hidden lg:block" aria-hidden>
+          <div className="mt-10 hidden lg:block" aria-hidden>
             <Layers3D />
           </div>
         </div>
